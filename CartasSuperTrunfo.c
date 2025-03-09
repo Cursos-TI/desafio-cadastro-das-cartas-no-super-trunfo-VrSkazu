@@ -128,4 +128,5 @@ if(super_poder1 > super_poder2){
     printf("O SUPER PODER DA CARTA 2 VENCEU: \n");
 }
 
+
 return 0;
