@@ -81,18 +81,51 @@ int main() {
     pib_per_capita2 = (pib2 / populacao2);
     printf("O PIB PER CAPITA E: %.10f\n", pib_per_capita2);
 
-    printf("populacao da carta 1 venceu ?:(%d)\n", populacao1 > populacao2);
-    printf("a area da carta 1 venceu ?:(%d)\n", area1 > area2);
-    printf("o pib1 da carta 1 venceu ?:(%d)\n", pib1 > pib2);
-    printf("a quantidade de prontos turisticos da carta 1 é maior ?:(%d)\n", pontos_turisticos1 > pontos_turisticos2);
-    printf("o pib per capitada da carta 1 é maior ?:(%d)\n", pib_per_capita1 > pib_per_capita2);
-    printf("a densidade populacional da carta 1 é maior ?:(%d)\n", densidade_populacional1 > densidade_populacional2);
-    
+    super_poder1 = populacao1 + area1 + pib1 + pontos_turisticos1 + (1/densidade_populacional1);
 
-        super_poder1 = populacao1 + area1 + pib1 + pontos_turisticos1 + (1/densidade_populacional1);
-        super_poder2 = populacao2 + area2 + pib2 + pontos_turisticos2 + (1/densidade_populacional2);
+    super_poder2 = populacao2 + area2 + pib2 + pontos_turisticos2 + (1/densidade_populacional2);
 
-  
-      
-    return 0;
+
+if(populacao1 > populacao2){
+    printf("A POPULACAO DA CARTA 1 E MAIOR: \n");
+}else{
+    printf("A POPULACAO DA CARTA 2 E MAIOR: \n");
 }
+
+if(area1 > area2){
+    printf("A AREIA DA CARTA 1 E MAIOR: \n");
+}else{
+    printf("A AREA DA CARTA 2 E MAIOR: \n");
+}
+
+if(pib1 > pib2){
+    printf("O PIB DA CARTA 1 VENCEU: \n");
+}else{
+    printf("O PIB DA CARTA 2 VENCEU: \n");
+}
+
+if(pontos_turisticos1 > pontos_turisticos2){
+    printf("A CARTA 1 TEM MAIS PONTOS TURISTICOS: \n");
+}else{
+    printf("A CARTA 2 TEM MAIS PONTOS TURISTICOS: \n");
+}
+
+if(densidade_populacional1 < densidade_populacional2){
+    printf("A DENSIDADE POPULACIONAL DA CARTA 1 VENCEU: \n");
+}else{
+    printf("A DENSIDADE POPULACIONAL DA CARTA 2 VENCEU: \n");
+}
+
+if(pib_per_capita1 > pib_per_capita2){
+    printf("O PIB PER CAPITA DA CARTA 1 E MAIOR: \n");
+}else{
+    printf("O PIB PER CAPIDA DA CARTA 2 E MAIOR: \n");
+}
+
+if(super_poder1 > super_poder2){
+    printf("O SUPER PODER DA CARTA 1 VENCEU: \n");
+}else{
+    printf("O SUPER PODER DA CARTA 2 VENCEU: \n");
+}
+
+return 0;
